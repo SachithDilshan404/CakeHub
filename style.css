@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(bb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.ggg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(ad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-style: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+  
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  
+}
+.point {
+  cursor: pointer;
+}
+.pointt {
+  cursor: pointer;
+  font-weight: 700;
+}
+.pointt:hover{
+  text-decoration: none;
+}
+.deco {
+  text-align: center;
+  margin: 3px;
+  color: #fff;
+}
+
+.ballon {
+ position: absolute;
+ top:22px;
+ right: 30px;
+ font-size: 18px;
+ background-color: #fff;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+ border-radius: 12px;
+ padding: 20px 35px 20px 25px;
+ border-left: 6px solid #4070f4;
+ overflow: hidden;
+ transform: translateX(calc(100% + 37px));
+ transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.ballon.active {
+  transform: translateX(0%);
+}
+
+.ballon .ballon-content{
+  display: flex;
+  align-items: center;
+}
+.ballon-content .check {
+  height: 25px;
+  width: 25px;
+  background-color: #4070f4;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ballon-content .message{
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+.message .textt{
+  font-size: 20px;
+  font-weight: 220;
+  color: #666666;
+}
+
+.message .textt.textt-1{
+  font-weight: 600;
+  color: black;
+}
+
+.ballon .closer{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.ballon .closer:hover{
+  opacity: 1;
+}
+.ballon .progress{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+.ballon .progress:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+}
+.progress.active:before{
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100%{
+    right: 100%;
+  }
+}
+
+.ballom {
+  position: absolute;
+  top:22px;
+  right: 30px;
+  font-size: 18px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 20px 35px 20px 25px;
+  border-left: 6px solid #f44040;
+  overflow: hidden;
+  transform: translateX(calc(100% + 37px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.ballom.active {
+  transform: translateX(0%);
+}
+.ballom .ballom-content{
+  display: flex;
+  align-items: center;
+}
+.ballom-content .check {
+  height: 25px;
+  width: 25px;
+  background-color: #f44040;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ballom .closer{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.ballom .closer:hover{
+  opacity: 1;
+}
+.ballom .progress{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+.ballom .progress:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f44040;
+}
+.ballom-content .check {
+  height: 25px;
+  width: 25px;
+  background-color: #f44040;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ballom-content .message{
+  display: flex;
+  flex-direction: column;
+  margin: 0 25px;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+

@@ -1,0 +1,18 @@
+{
+    "require": {
+        "google/apiclient": "^2.15.0",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive",
+            "YouTube"
+        ]
+    },
+    "config": {
+        "process-timeout": 600
+    }
+}
